@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       
+    <main>
+        <section>
+            <h1>Criar um novo post</h1>
+
+            <form id="formulario-post">
+
+                <label for="titulo">Título do post:</label>
+                <input type="text" id="titulo" placeholder="Digite o título" required>
+
+                <br><br>
+
+                <label for="conteudo">Conteúdo:</label>
+                <textarea id="conteudo" rows="4" placeholder="No que você está pensando?" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Feed de Postagens:</h3>
+            
+            <!-- Esta é a "caixa" onde vamos empilhar os posts -->
+            <div id="feed-de-posts">
+                <!-- O JavaScript vai injetar os <article> aqui dentro dinamicamente -->
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
